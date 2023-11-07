@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Just an HTML demo">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/TripCalculator/TripCalc.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Mike's HTML Training</title>
+    </head>
+    <body>
+        <title>Mike's HTML Training</title>
+        <div class="pb-5 d-print-none">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/Index.html">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Bootstrap/">Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" role="tab" href="/TripCalculator/">TripCalculator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/About/">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-sm-3">
+                    <h2 class="mb-3">Travel</h2>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">Mi</span>
+                        <div class="form-floating">
+                            <input required="true" type="number" class="form-control" id="miles-to" aria-describedby="miles-to">
+                            <label for="miles-to" class="form-label">Miles to location</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">Mi</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="miles-from" aria-describedby="miles-from">
+                            <label for="miles-from" class="form-label">Miles Return</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">MI</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="extra-miles" aria-describedby="extra-miles">
+                            <label for="extra-miles" class="form-label">Extra Mileage</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">MPG</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="fuel-econ" aria-describedby="fuel-econ">
+                            <label for="fuel-econ">Vehicle Fuel Economy</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="fuel-price" aria-describedby="fuel-price">
+                            <label for="fuel-price" class="form-label">Fuel Price</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <h2 class="mb-3">Lodging</h2>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">#</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="nights-mid" aria-describedby="nights-mid">
+                            <label for="nights-mid" class="form-label">Nights at Midway point</label>
+                        </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">$</span>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="mid-per-night" aria-describedby="mid-per-night">
+                        <label for="mid-per-night" class="form-label">Midway Stay Price Per Night</label>
+                    </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">#</span>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="nights-dest" aria-describedby="nights-dest">
+                        <label for="nights-dest" class="form-label">Nights at Destination</label>
+                    </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">$</span>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="dest-per-night" aria-describedby="dest-per-night">
+                        <label for="dest-per-night" class="form-label">Destination Stay Per Night</label>
+                    </div>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">$</span>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="prepaid" aria-describedby="prepaid">
+                        <label for="prepaid" class="form-label">Prepaid Ammount</label>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <h2 class="mb-3">Extras</h2>
+
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">#</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="people" aria-describedby="people">
+                            <label for="people" class="form-label">How Many People?</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">#</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="lunch-days" aria-describedby="lunch-days">
+                            <label for="lunch-days" class="form-label">Days to Buy Lunch</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="lunch-cost" aria-describedby="lunch-cost">
+                            <label for="lunch-cost" class="form-label">Avg. Lunch Cost Per Person</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">#</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="dinner-days" aria-describedby="dinner-days">
+                            <label for="dinner-days" class="form-label">Days to Buy Dinner</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="dinner-cost" aria-describedby="dinner-cost">
+                            <label for="dinner-cost" class="form-label">Avg. Dinner Cost Per Person</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="fun-things" aria-describedby="fun-things">
+                            <label for="fun-things" class="form-label">Extra Things (Fun Money)</label>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary mb-3 d-print-none" onclick="calculate()">Calculate</button>
+                    <div class="mb-3">
+                        <label for="fuel-cost" class="form-label">Fuel Cost: </label>
+                        <h3 id="fuel-cost"></h3> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="meals-plus" class="form-label">Meals and Extras: </label>
+                        <h3 id="meals-plus"></h3> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="lodging-cost" class="form-label">Lodging Total: </label>
+                        <h3 id="lodging-cost"></h3> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="lodging-minus-pre" class="form-label">Lodging Minus Prepaid: </label>
+                        <h3 id="lodging-minus-pre"></h3> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="trip-total-minus-pre" class="form-label">Total Trip Minus Prepaid: </label>
+                        <h3 id="trip-total-minus-pre"></h3> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="trip-total" class="form-label">Total Trip: </label>
+                        <h3 id="trip-total"></h3> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </body>
+</html>

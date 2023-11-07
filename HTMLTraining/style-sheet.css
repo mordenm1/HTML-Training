@@ -1,0 +1,60 @@
+.nav-tab {
+    display: inline;
+    list-style-type: none;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    /* padding-inline: 5rem; */
+}
+
+a.nav-tab-link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-inline: 5rem;
+}
+
+a.nav-tab-link:hover {
+    background-color: rgb(54, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-inline: 5rem;
+    border-radius: .5rem;
+}
+
+.nav-bar-div {
+    display: flex;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    background-color: rgb(119, 119, 119);
+    border-radius: .2rem;
+
+}
+
+.tab-selected {
+    background-color: black;
+    border-radius: .5rem;
+}
+
+.code-photo {
+    height:auto;
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.heading-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pdf-content {
+    height:45rem;
+    width:70%;
+}
